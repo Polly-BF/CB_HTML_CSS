@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto HTML</title>
+<link rel="stylesheet" type="text/css" href="EstiloCB3.css">
+</head>
+<body>
+    <header>
+        <ul class="menu">
+    <!--Esses são hyperlinks do menu do cabeçalho-->
+    <li><a href="Projeto CB1 CSS.html">O que é Fashion Delivery?</a></li>
+    <li><a href="Projeto CB2 CSS.html">Custom Bags</a></li>
+    <li><a href="Projeto CB3 CSS.html">Perfil do Cliente</a></li>
+    </ul>
+    </header>
+    <br>
+    <div>
+    <h1 id="titulo">Gestão da Sacola</h1>
+    <br>
+   </div>
+   <form action="" method="">
+    <fieldset class="grupo">
+    <!--Form com action para chamar um arquivo e method para selecionar o método de envio desses dados-->
+    <div>
+    <p>
+        <br>
+        <br>
+    <!-- Usado required para gerar obrigatoriedade de vincular a sacola à um nº de pedido-->
+        <div class="campo">
+        <label for="pedido">
+            Pedido Nº: 
+        </label>
+        <textarea row="6" style="width: 15em" type="tex" id="pedido" placeholder="Descreva o nº do pedido" required></textarea>
+    </div>             
+    <div class="campo">
+        <label for="pecas">
+           Quantidade de peças enviadas:
+        </label>
+        <textarea row="6" style="width: 15em" type="text" id="pecas" placeholder="Qual o nº de peças enviadas?"></textarea>
+    </div> 
+    <div class="campo">
+        <label for="codigo">
+            Códigos das peças: 
+        </label>
+        <textarea row="6" style="width: 45em" type="text" id="codigo" placeholder="Descreva os códigos das peças"></textarea>
+    </div>  
+    <div class="campo">
+        <label for="valor">
+            Valor total da sacola: 
+        </label>    
+        <input type="text" id="valor" placeholder="Valor total das peças">
+    </div> 
+    <div class="campo">
+         <!--Data de envio com calendário-->
+        <label for="dataEnvio">Data do envio:</label>
+        <input type="date" id="dataEnvio" name="dataEnvio">
+    </div>
+    <div class="campo">
+        <!--Data de devolução com calendário-->
+        <label for="dataDevolucao">Data da devolução:</label>
+        <input type="date" id="dataDevolucao" name="dataDevolucao">
+    </div>
+    <p>
+        <label for="compra">
+            Quantidade de peças adquiridas:
+        </label>    
+        <input row="1" style="width: 15em" type="number" id="compra" placeholder="Quant. de peças adquiridas">
+    </p> 
+    <br>
+    <p>
+        <label for="valorCompra">
+            Valor total da compra: 
+        </label>    
+        <input type="text" id="valorCompra" placeholder="Valor total da compra">
+    </p> 
+    <br>
+    <p>
+        <label for="ticketMedio">
+            Valor do ticket médio: 
+        </label>    
+        <input type="text" id="ticketMedio" placeholder="Valor do ticket médio">
+    </p>
+    <!--Radio foi usado para a seleção de um único elemento na lista de pagamento-->
+    <br>
+    <legend>Forma de pagamento:</legend>
+    <p><input type="radio" id="radio1" value="debito" name="opcoes">Débito</p>
+    <p><input type="radio" id="radio2" value="credito" name="opcoes">Crédito</p>
+    <p><input type="radio" id="radio4" value="parcelado" name="opcoes">Parcelado - <input type="number" id="parcelas" placeholder="Quant. de parcelas"></p>
+    <p><input type="radio" id="radio3" value="dinheiro" name="opcoes">Dinheiro</p>
+    <p><input type="radio" id="radio4" value="pix" name="opcoes">PIX</p>
+<br>
+    <p>
+        <!--Botão para limpar o relatório com reset-->  
+        <button class="botao" type="reset">Limpar</button>
+        <!--Botão para enviar com submit--> 
+        <button class="botao" type="submit">Enviar</button>
+    </p>
+</div>
+    </form>
+</fieldset> 
+<br>
+<fieldset class="grupo">
+    <!--Inserção de formulário para contato, com a tag Form-->    
+    <h2><legend><strong>FALE CONOSCO:</strong></legend></h2>
+    <br>
+    <p>Interessado em adquirir nossa solução ou deseja tirar alguma dúvida? Deixe seu contato:</p>
+    <br>
+        <form>
+            <p>
+                <label for="nome">
+                    Nome:
+                </label>    
+                <input type="text" id="nome" placeholder="Digite aqui o seu nome">
+            </p>
+            <br>
+            <p>
+                <label for="telefone">
+                    Telefone:
+                </label>
+                <input type="tel" id="telefone" placeholder="Digite seu celular com DDD">
+            </p>
+            <br>
+            <p>
+                <label for="email">
+                    Email:
+                </label>
+                <input type="email" id="email" placeholder="Digite aqui o seu email">
+            </p>
+            <br>
+            <label for="cidade">
+                Cidade:
+            </label>    
+            <input type="text" id="cidade" placeholder="Digite aqui a sua cidade">
+        </p>
+        <br>
+            <p>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+            <option>Selecione o Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará </option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Peraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select></p>
+            <p>
+            <br>
+                <label for="mensagem">
+                    Mensagem:
+                </label>
+                <textarea row="6" style="width: 15em" type="mensagem" id="nome" placeholder="Deixe aqui a sua mensagem"></textarea>
+            </p>
+            <br>
+                <legend>Qual é o seu segmento?</legend>
+                <p><input type="radio" id="radio1" value="loja" name="opcoes">Loja</p>
+                <p><input type="radio" id="radio2" value="brecho" name="opcoes">Brechó</p>
+                <p><input type="radio" id="radio3" value="sacoleira" name="opcoes">Sacoleira</p>
+                <p>
+                <br>
+                    <!--Botão para limpar o relatório com reset-->  
+                    <button class="botao" type="reset">Limpar</button>
+                    <!--Botão para enviar com submit--> 
+                    <button class="botao" type="submit">Enviar</button>
+                </p>
+    
+        </form>
+    </fieldset> 
+</body>
+</html>

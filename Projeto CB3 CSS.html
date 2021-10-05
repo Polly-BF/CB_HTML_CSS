@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto HTML</title>
+<link rel="stylesheet" type="text/css" href="EstiloCB3.css">
+</head>
+<body>
+    <header>
+        <ul class="menu">
+    <!--Esses são hyperlinks do menu do cabeçalho-->
+    <li><a href="Projeto CB1 CSS.html">O que é Fashion Delivery?</a></li>
+    <li><a href="Projeto CB2 CSS.html">Custom Bags</a></li>
+    <li><a href="Projeto CB4 CSS.html">Gestão da Sacola</a></li>
+        </ul>
+    </header>
+    <br>
+    <div>
+        <h1 id="titulo">Perfil do Cliente</h1>
+        <br>
+    </div>
+    <!--Form com action para chamar um arquivo e method para selecionar o método de envio desses dados-->
+    <form>
+    <fieldset class="grupo">
+        <legend><strong>DADOS CADASTRAIS:</strong></legend>
+        <br>
+                <div class="campo">
+                    <label for="nome">
+                        Nome completo:
+                    </label>    
+                    <input row="1" style="width: 25em" type="text" id="nome" placeholder="Digite aqui o seu nome">
+                </div>
+                <div class="campo">
+                     <!--Data de nascimento com calendário-->
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento">
+                </div>
+                    <div class="campo">
+                    <label for="telefone">
+                        Telefone:
+                    </label>
+                    <input row="1" style="width: 17em" type="tel" id="telefone" placeholder="Digite seu celular com DDD">
+                </div>
+                <div class="campo">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input row="1" style="width: 18.5em" type="email" id="email" placeholder="Digite aqui o seu email">
+                </div>
+                <div class="campo">
+                <label for="endereco">
+                    Endereço completo:
+                </label>    
+                <input row="1" style="width: 50em" type="text" id="endereco" placeholder="Digite aqui o seu endereço">
+                </div>
+            </div>
+        
+    </fieldset>
+
+    <br>
+    <fieldset class="grupo">
+        <legend><strong>ESTILO E MEDIDAS:</strong></legend>
+<br>
+<!-- Usado Checkbox, pois pode ser selecionado mais de um estilo-->
+        <legend><strong>Qual é o seu estilo?</strong></legend>
+        <br>
+        <input type="checkbox" name="opcoes">Clássico
+        <input type="checkbox" name="opcoes">Vintage/retrô
+        <input type="checkbox" name="opcoes">Street
+        <input type="checkbox" name="opcoes">Casual
+        <input type="checkbox" name="opcoes">Glam
+        <input type="checkbox" name="opcoes">Comfy
+        <input type="checkbox" name="opcoes">Hipster
+        <input type="checkbox" name="opcoes">Esportivo
+        <input type="checkbox" name="opcoes">Indie
+        <input type="checkbox" name="opcoes">Minimalista
+        <input type="checkbox" name="opcoes">Romântico
+        <input type="checkbox" name="opcoes">Sexy  
+        <input type="checkbox" name="opcoes">Urbano
+        <input type="checkbox" name="opcoes">Boho
+        <input type="checkbox" name="opcoes">Grunge
+        <input type="checkbox" name="opcoes">Rocker
+<br>
+<br>
+ <!--Radio foi usado para a seleção de um único formato de corpo-->
+        <legend><strong>Qual é o seu formato de corpo?</strong></legend>
+        <br>
+        <p><input type="radio" id="radio1" value="diamante" name="opcoes">Diamante</p>
+        <p><input type="radio" id="radio2" value="ampulheta" name="opcoes">Ampulheta</p>
+        <p><input type="radio" id="radio3" value="oval" name="opcoes">Oval</p>
+        <p><input type="radio" id="radio4" value="retangulo" name="opcoes">Retângulo</p>
+        <p><input type="radio" id="radio5" value="pera" name="opcoes">Pêra</p>
+        <p><input type="radio" id="radio6" value="triangulo" name="opcoes">Triângulo invertido</p>
+        <p>
+<!-- Usada a tag img para inserir uma imagem-->
+        <br>
+        <img src="Imagens CB/Tipos de corpo.jpg" alt="aqui apareceira uma imagem de tipos de corpos" title="imagem">   
+        </p>
+        <br>
+<br>
+<p>
+<!--Variáveis de preferências do cliente-->
+    <label for="preferencia">
+        Quais as peças de roupa que mais usa?
+    </label>
+    <textarea row="6" style="width: 30em" type="tex" id="preferencia" placeholder="Descreva seus modelos preferidos"></textarea>
+</p>             
+<p>
+    <label for="cores">
+        Quais as cores que mais usa?
+    </label>
+    <textarea row="6" style="width: 35.5em" type="text" id="cores" placeholder="Descreva suas cores preferidas"></textarea>
+</p> 
+<p>
+    <label for="rejeita">
+        Quais tipos de roupa não gosta?
+    </label>
+    <textarea row="6" style="width: 34.5em" type="text" id="rejeita" placeholder="Descreva os modelos que não usaria"></textarea>
+</p> 
+<br> 
+
+    <div class="campo">
+    <label for="altura">
+        Altura:
+    </label>    
+    <input type="text" id="altura" placeholder="Digite aqui a sua altura">
+    </div> 
+    <div class="campo">
+    <label for="peso">
+        Peso:
+    </label>    
+    <input type="text" id="peso" placeholder="Digite aqui o seu peso">
+    </div> 
+<p>
+    <label for="medida">
+        Medida:
+    </label>  
+    <!-- Title usado para fazer referência à tabela de medidas-->  
+    <input type="text" id="medida" placeholder="Digite a seu medida" title="Coloque sua medida de acordo com a tabela de medidas">
+</p> 
+<!-- Usado table para iniciar uma tabela de medidas-->
+<!--Para abrir linha TR e coluna TD, em uma tabela-->
+<table border=1>
+    <tr>
+     <!--Para mesclar células, usar o Colspan-->
+        <th colspan="6">TABELA DE MEDIDAS</th>
+    </tr>
+    <tr>
+    <!--Usado TH para inserir títulos nas colunas-->
+        <th>MEDIDAS</th>
+        <th>36 - PP</th>
+        <th>38 - P</th>
+        <th>40/42 - M</th>
+        <th>44 - G</th>
+        <th>46/48 - XG</th>
+    </tr>
+    <br>
+    <tr>
+        <td>Busto</td>
+        <td>84 cm</td>
+        <td>88 cm</td>
+        <td>92/96 cm</td>
+        <td>100 cm</td>
+        <td>106/112 cm</td>
+
+    </tr>
+    <tr>
+        <td>Cintura</td>
+        <td>68 cm</td>
+        <td>72 cm</td>
+        <td>76/80 cm</td>
+        <td>90/96 cm</td>
+        <td>110 cm</td>
+    </tr>
+    <tr>
+        <td>Cintura baixa</td>
+        <td>78 cm</td>
+        <td>82 cm</td>
+        <td>86 cm</td>
+        <td>90 cm</td>
+        <td>94 cm</td>
+    </tr>
+    <tr>
+        <td>Quadril</td>
+        <td>94 cm</td>
+        <td>98 cm</td>
+        <td>102/106 cm</td>
+        <td>110 cm</td>
+        <td>116/122 cm</td>
+    </tr>
+    <tr>
+        <td>Comp. Cintura ao Chão</td>
+        <td>100 cm</td>
+        <td>100 cm</td>
+        <td>102 cm</td>
+        <td>104 cm</td>
+        <td>106 cm</td>
+    </tr>
+    <tr>
+        <td>Manga Comprida</td>
+        <td>61 cm</td>
+        <td>61 cm</td>
+        <td>61,6 cm</td>
+        <td>61,9 cm</td>
+        <td>62,2 cm</td>
+    </tr>
+</table>
+<br>
+<div class="campo">
+    <label for="calcado">
+        Numeração de calçado:
+    </label>    
+    <input type="text" id="calcado" placeholder="Digite a nº do seu calçado">
+</div>               
+<div class="campo">
+    <label for="intima">
+        Numeração de moda íntima:
+    </label>    
+    <input type="text" id="intima" placeholder="Digite a nº sua moda íntima">
+</div>  
+    </fieldset>
+    <br>
+    <p>
+        <!--Botão para limpar o relatório com reset-->  
+        <button class="botao" type="reset">Limpar</button>
+        <!--Botão para enviar com submit--> 
+        <button class="botao" type="submit">Enviar</button>
+    </p>
+            </form>
+    </div>
+<footer>
+<p>
+    
+</p>       
+</footer>            
+</body>
+</html>
